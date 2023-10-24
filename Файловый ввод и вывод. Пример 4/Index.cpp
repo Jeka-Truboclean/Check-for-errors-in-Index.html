@@ -8,8 +8,6 @@ int main()
 {
 	ifstream is("index.html", ios::in);
 
-	ofstream in("NewIndex.txt", ios::trunc);
-
 	if (!is.is_open())
 	{
 		cout << "Open file ERROR\n";
@@ -37,8 +35,6 @@ int main()
 		{
 			ch = 0;
 		}
-
-		in.put(character);
 
 		Sleep(1);
 	} while (!is.eof());
